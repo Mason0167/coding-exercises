@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: raleway, sans-serif;
+}
+
+header{
+    background-image: url("../img/usa-flag-map.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 42%;
+    background-size: 320px 220px;
+    background-color: white;
+    z-index: 1;
+    margin: 10px;
+    height: 170px;
+}
+
+header h1{
+    text-align: center;
+}
+
+.cont1{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.items{
+    font-size: 20px;
+    font-family: "Sofia", serif;
+    list-style: none;
+    padding: 0;
+    color: #89549c;
+}
+
+.items a{
+    text-decoration: none;
+    position: relative;
+    left: -17px
+}
+
+.items a:hover{
+    color: #47be64;
+}
+
+main{
+    margin: 30px;
+}
+
+main p{
+    line-height: 1.6;
+    font-size: 110%;
+}

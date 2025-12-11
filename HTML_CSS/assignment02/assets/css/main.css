@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: raleway, sans-serif;
+}
+
+header{
+    background-image: url("../img/usa-flag-map.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 42%;
+    background-size: 320px 220px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 24%;
+    padding: 10px;
+}
+
+header p{
+    font-size: 200%;
+    margin: 10px 0;
+    text-align: center;
+    background-color: white;
+    color: #1f7a1f;
+}
+
+header h1{
+    color: #ac8dc6;
+    text-shadow: #00008B 1px 1px;
+    text-align: center;
+}
+
+.cont1{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.items{
+    margin: 0;
+    padding-left: 30px;
+    font-size: 20px;
+    font-family: "Sofia", serif;
+}
+
+.items a{
+    text-decoration: none;
+    color: #89549c;
+    padding-top: 150px;
+}
+
+.items a:hover{
+    color: #47be64;
+}
+
+article{
+    padding-top: 170px;
+}
+
+#g\&s{
+    padding-top: 140px;
+    margin-top: -140px;
+}
+
+#video{
+    padding-top: 150px;
+    margin-top: -150px;
+}
+
+#schedule{
+    padding-top: 170px;
+    margin-top: -170px;
+}
+
+#testi{
+    padding-top: 145px;
+    margin-top: -145px;
+}
+
+#loc{
+    padding-top: 150px;
+    margin-top: -150px;
+}
+
+#detail{
+    text-align: center;
+    background-color: #fffbbe;
+    border: dotted 1px black;
+    border-radius: 10px;
+    width: 1500px;
+    height: 220px;
+}
+
+#detail h1{
+    color: #89549c;
+}
+
+#detail p{
+    line-height: 20px;
+}
+
+#bio{
+    text-align: center;
+    height: 500px;
+    font-size: 110%;
+    padding: 10px;
+    list-style-position: inside;
+    line-height: 30px;
+}
+
+#bio img{
+    width: 28%;
+    height: 20%
+}
+
+#bio1 img{
+    width: 23%;
+    height: 30%;
+}
+
+#bio2 img{
+    width: 32%;
+    height: 45%;
+}
+
+#bio1, #bio2 {
+    float: left;
+    width: 50%;
+    height: 470px;
+    text-align: center;
+    list-style-position: inside;
+    font-size: 110%;
+    line-height: 30px;
+}
+
+#bio:hover{
+    background-color: lightgray;
+    box-shadow: #3a2442 3px 3px;
+    border: groove #5c5c8a;
+    transform: scale(110%);
+}
+
+#bio1:hover{
+    background-color: #dacafb;
+    box-shadow: #89549c 3px 3px;
+    border: groove #8c59f3;
+    transform: scale(110%);
+}
+
+#bio2:hover{
+    background-color: #fffccc;
+    box-shadow: #89549c 3px 3px;
+    border: groove #fff899;
+    transform: scale(110%);
+}
+
+#video h1, #video h3{
+    padding-left: 40px;
+}
+
+#video figure{
+    float: left;
+    position: relative;
+    top: -30px;
+}
+
+#sd{
+    text-align: center;
+    margin: 0 100px;
+    background-color: #dacafb;
+    border: #fffbbe solid 2px;
+    border-radius: 10px;
+}
+
+#sd h4{
+    font-size: 110%;
+    margin: 10px 0;
+}
+
+#sd h4:hover{
+    background: #ac8dc6;
+    margin: 0;
+    padding: 10px;
+    transition: 1s;
+}
+
+#testi{
+    padding-left: 40px;
+}
+
+#testi figure{
+    margin: 0;
+}
+
+#testi h2{
+    text-align: center;
+    margin: 20px 110px 0 110px;
+}
+
+#t1{
+    background-color: #fffccc;
+    border: #8c59f3 dashed 2px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 100px;
+    height: 320px;
+}
+
+#t1 h2{
+    font-family: "Sofia", serif;
+}
+
+#t1 p, #t2 p{
+    float: left;
+    font-size: 120%;
+}
+
+#t1 figure, #t2 figure{
+    float: left;
+    width: 20%;
+}
+
+#t1 img{
+    width: 200px;
+    height: 20%;
+}
+
+#t2 img{
+    width: 200px;
+    height: 20%;
+}
+
+#t2{
+    background-color: #ded0fb;
+    border: #8c59f3 dashed 2px;
+    border-radius: 10px;
+    padding: 10px;
+    height: 300px;
+    margin: 5px 100px;
+}
+
+#t2 h2{
+    font-family: "Open Sans", sans-serif;
+}
+
+#loc{
+    text-align: center;
+}
+
+#loc h2:first-letter{
+    color: #89549c;
+}
+
+footer{
+    clear: both;
+    padding-top: 150px;
+    margin-top: -135px;
+}
+
+footer h5{
+    position: relative;
+    bottom: 20px;
+}
+
+footer a:active{
+    color: #fffbbe;
+}
+
+footer a:focus{
+    background-color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

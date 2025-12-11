@@ -1,0 +1,14 @@
+C:\comp1202\Lab\LabTest2\bin\Debug\net8.0\LabTest2.exe
+C:\comp1202\Lab\LabTest2\bin\Debug\net8.0\LabTest2.deps.json
+C:\comp1202\Lab\LabTest2\bin\Debug\net8.0\LabTest2.runtimeconfig.json
+C:\comp1202\Lab\LabTest2\bin\Debug\net8.0\LabTest2.dll
+C:\comp1202\Lab\LabTest2\bin\Debug\net8.0\LabTest2.pdb
+C:\comp1202\Lab\LabTest2\obj\Debug\net8.0\LabTest2.GeneratedMSBuildEditorConfig.editorconfig
+C:\comp1202\Lab\LabTest2\obj\Debug\net8.0\LabTest2.AssemblyInfoInputs.cache
+C:\comp1202\Lab\LabTest2\obj\Debug\net8.0\LabTest2.AssemblyInfo.cs
+C:\comp1202\Lab\LabTest2\obj\Debug\net8.0\LabTest2.csproj.CoreCompileInputs.cache
+C:\comp1202\Lab\LabTest2\obj\Debug\net8.0\LabTest2.dll
+C:\comp1202\Lab\LabTest2\obj\Debug\net8.0\refint\LabTest2.dll
+C:\comp1202\Lab\LabTest2\obj\Debug\net8.0\LabTest2.pdb
+C:\comp1202\Lab\LabTest2\obj\Debug\net8.0\LabTest2.genruntimeconfig.cache
+C:\comp1202\Lab\LabTest2\obj\Debug\net8.0\ref\LabTest2.dll
