@@ -176,6 +176,7 @@
           }
           */
 
+          
           return (
             <div className={
               sender === 'user' 
@@ -200,8 +201,23 @@
         }
 
         function ChatMessages({ chatMessages }){
+          const chatMessagesRef = React.useRef(null);
+
+          React.useEffect(() => {
+            const containerElem = chatMessagesRef.current;
+            if (containerElem) {
+              containerElem.scrollTop = containerElem.scrollHeight
+            }
+
+            /* Dependency Array: Controls when useEffect runs. 
+            [] => Only run once, after the component is created */
+          }, [chatMessages]);
+
           return(
-            <div className="chat-message-container">
+            <div 
+              className="chat-message-container"
+              ref={chatMessagesRef}
+              >
               {chatMessages.map((chatMessage) => {
                 return(
                   <ChatMessage 
