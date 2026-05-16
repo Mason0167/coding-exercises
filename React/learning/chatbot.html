@@ -109,6 +109,23 @@
     <script src="https://unpkg.com/supersimpledev/chatbot.js"></script>
 
     <script type="text/babel">
+        // Customize Hooks function must start with use
+        function useAutoScroll(dependencies){
+          const chatMessagesRef = React.useRef(null);
+
+          React.useEffect(() => {
+            const containerElem = chatMessagesRef.current;
+            if (containerElem) {
+              containerElem.scrollTop = containerElem.scrollHeight
+            }
+
+            /* Dependency Array: Controls when useEffect runs. 
+            [] => Only run once, after the component is created */
+          }, [dependencies]);
+
+          return chatMessagesRef
+        }
+
         function ChatInput({ chatMessages, setChatMessages }){
           // Store the current data, second one is updater function
           const [inputText, setInputText] = React.useState('');
@@ -198,7 +215,6 @@
             );
           }
           */
-
           
           return (
             <div className={
@@ -224,17 +240,7 @@
         }
 
         function ChatMessages({ chatMessages }){
-          const chatMessagesRef = React.useRef(null);
-
-          React.useEffect(() => {
-            const containerElem = chatMessagesRef.current;
-            if (containerElem) {
-              containerElem.scrollTop = containerElem.scrollHeight
-            }
-
-            /* Dependency Array: Controls when useEffect runs. 
-            [] => Only run once, after the component is created */
-          }, [chatMessages]);
+          const chatMessagesRef = useAutoScroll(chatMessages);
 
           return(
             <>
@@ -242,9 +248,7 @@
                 <p className="welcome-message">
                   Welcome to the chatbot project! Send a message using the textbox below.
                 </p> :
-
                 
-
                 <div 
                   className="chat-message-container"
                   ref={chatMessagesRef}
