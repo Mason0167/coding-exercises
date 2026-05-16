@@ -4,7 +4,8 @@
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
-    "react-router-dom": "^7.15.0"
+    "react-router-dom": "^7.15.0",
+    "supersimpledev": "^8.6.4"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
