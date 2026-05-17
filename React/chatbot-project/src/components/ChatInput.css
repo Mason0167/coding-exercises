@@ -1,0 +1,31 @@
+.chat-input{
+  font-size: 15px;
+  padding: 12px 15px;
+  border-width: 1px;
+  border-radius: 10px;
+  margin-right: 10px;
+
+  /* Make an element grow and take up the remaining space */
+  flex-grow: 1;
+}
+
+.chat-input-container{
+  display: flex;
+  margin-bottom: 60px;
+
+}
+
+.send-button{
+  background-color: rgb(25, 135, 84);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.loading-spinner {
+  height: 40px;
+  margin: -15px;
+}
