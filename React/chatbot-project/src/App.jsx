@@ -4,7 +4,7 @@ import { Chatbot } from 'supersimpledev';
 import { ChatInput } from './components/ChatInput';
 import { ChatMessage } from './components/ChatMessage';
 
-/*  */ 
+/* Default export: Each file focus on 1 thing */ 
 import ChatMessages from './components/ChatMessages';
 
 // Vite let us import any types of files
