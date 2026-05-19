@@ -15,7 +15,7 @@
 
 }
 
-.send-button{
+.send-button, .clear-button {
   background-color: rgb(25, 135, 84);
   color: white;
   border: none;
@@ -23,6 +23,10 @@
   font-size: 15px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.clear-button {
+  background-color: rgb(230, 230, 230);
 }
 
 .loading-spinner {

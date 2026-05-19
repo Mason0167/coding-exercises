@@ -3,6 +3,7 @@ import { Chatbot } from 'supersimpledev';
 import './ChatInput.css';
 
 import LoadingImage from '../assets/loading-spinner.gif';
+import dayjs from 'dayjs';
 
 export function ChatInput({ chatMessages, setChatMessages }){
   // Store the current data, second one is updater function
@@ -19,6 +20,11 @@ export function ChatInput({ chatMessages, setChatMessages }){
     {event.key === 'Escape' && setInputText('')}
   }
 
+  function clearMessages(){
+    setChatMessages([])
+
+  }
+
   async function sendMessage(){
 
     const newChatMessages = [
@@ -26,7 +32,8 @@ export function ChatInput({ chatMessages, setChatMessages }){
       {
         message: inputText,
         sender: 'user',
-        id: crypto.randomUUID()
+        id: crypto.randomUUID(),
+        time: dayjs().valueOf()
       }
     ];
 
@@ -37,7 +44,8 @@ export function ChatInput({ chatMessages, setChatMessages }){
     {
       message: <img src={LoadingImage} className="loading-spinner" />,
       sender: 'robot',
-      id: crypto.randomUUID()
+      id: crypto.randomUUID(),
+      time: dayjs().valueOf()
     }]);
 
     const response = await Chatbot.getResponseAsync(inputText);
@@ -48,7 +56,8 @@ export function ChatInput({ chatMessages, setChatMessages }){
       {
         message: response,
         sender: 'robot',
-        id: crypto.randomUUID()
+        id: crypto.randomUUID(),
+        time: dayjs().valueOf()
       }
     ]);
 
@@ -73,6 +82,13 @@ export function ChatInput({ chatMessages, setChatMessages }){
         className="send-button"
         disabled={isLoading}
       >Send</button>
+
+      <button
+        onClick={clearMessages}
+        className="clear-button"
+      >
+        Clear
+      </button>
 
     </div>
   );
