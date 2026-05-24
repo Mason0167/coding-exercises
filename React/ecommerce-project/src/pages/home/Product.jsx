@@ -1,10 +1,11 @@
-import { useState } from "react";
 import axios from "axios";
+import { useState } from "react";
 import { formatMoney } from "../../utils/money";
 
 import checkMarkIcon from "../../assets/images/icons/checkmark.png";
 
 export function Product({ product, loadCart }) {
+  const [addedMsg, setAddedMsg] = useState(false);
   const [quantity, setQuantity] = useState(1);
 
   const addToCart = async () => {
@@ -14,6 +15,11 @@ export function Product({ product, loadCart }) {
     });
 
     await loadCart();
+
+    setAddedMsg(true);
+    setTimeout(() => {
+      setAddedMsg(false);
+    }, 2000);
   };
 
   const selectQuantity = (event) => {
@@ -58,7 +64,10 @@ export function Product({ product, loadCart }) {
 
       <div className="product-spacer"></div>
 
-      <div className="added-to-cart">
+      <div 
+        className="added-to-cart" 
+        style={{ opacity: addedMsg ? 1 : 0 }}
+      >
         <img src={checkMarkIcon} />
         Added
       </div>

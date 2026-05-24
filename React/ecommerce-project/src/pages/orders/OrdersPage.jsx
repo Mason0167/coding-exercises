@@ -7,7 +7,7 @@ import { Link } from "react-router";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-export function OrdersPage({ cart }) {
+export function OrdersPage({ cart, loadCart }) {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
@@ -19,6 +19,8 @@ export function OrdersPage({ cart }) {
     fetchOrdersData();
   }, []);
 
+  
+
   return (
     <>
       <title>Orders</title>
@@ -29,7 +31,10 @@ export function OrdersPage({ cart }) {
       <div className="orders-page">
         <div className="page-title">Your Orders</div>
 
-        <OrdersGrid orders={orders} />
+        <OrdersGrid 
+          orders={orders} 
+          loadCart={loadCart} 
+        />
       </div>
     </>
   );

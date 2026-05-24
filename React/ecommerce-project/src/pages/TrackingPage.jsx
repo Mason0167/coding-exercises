@@ -23,7 +23,7 @@ export function TrackingPage({ cart }) {
     }, [orderId]);
   
     if(!order){
-    return null;
+      return null;
     }
 
     const selectedProductData = order.products.find((product) => {
@@ -31,8 +31,8 @@ export function TrackingPage({ cart }) {
     })
 
     const totalDeliveryTimeMs = selectedProductData.estimatedDeliveryTimeMs - order.orderTimeMs;
-    // const timePassedMs = dayjs().valueOf() - order.orderTimeMs;
-    const timePassedMs = totalDeliveryTimeMs * 0.3
+    const timePassedMs = dayjs().valueOf() - order.orderTimeMs;
+    // const timePassedMs = totalDeliveryTimeMs * 0.3
     let deliveryPercent = (timePassedMs / totalDeliveryTimeMs) * 100;
     if (deliveryPercent >= 100){
       deliveryPercent = 100;
